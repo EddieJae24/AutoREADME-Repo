@@ -105,5 +105,5 @@ function generateMarkdown(data) {
   - Email: ${data.email}
   `;
 }
-
+// expeort the generateMarkdown function to the index.js file
 export default generateMarkdown;
