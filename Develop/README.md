@@ -1,8 +1,8 @@
-# Auto README Generator
+# REAME Generator
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Auto generates README based on responses to standardized questions. 
+  Makes life easy
 
   ## Table of Contents
   - [Installation](#installation)
@@ -14,10 +14,10 @@
   - [Questions](#questions)
 
   ## Installation
-  node JS
+  Node JS
 
   ## Usage
-  node index.js on the command line
+  node index.js
 
   ## Credits
   None
@@ -28,10 +28,10 @@
   https://opensource.org/licenses/MIT
 
   ## Contributing
-  Make a copy of the repo and push changes to the main branch.
+  Make a copy of repo
 
   ## Tests
-  None
+  See video for a walkthrough For a walthrough test demostrating how the application works, you can watch the video [here](https://drive.google.com/file/d/1J9QJ)
 
 
   ## Questions
