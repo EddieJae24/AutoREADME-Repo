@@ -15,7 +15,9 @@ function renderLicenseBadge(license) {
       // Add more licenses here as needed
     };
     // write code to check if the license is in the map and return the badge; use an if statement
-
+    if(licenseBadgeMap[license]) {
+      return licenseBadgeMap[license];
+    }
     
   }
 }
