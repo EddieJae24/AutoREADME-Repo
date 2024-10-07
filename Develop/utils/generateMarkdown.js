@@ -14,17 +14,40 @@ function renderLicenseBadge(license) {
       Boost: '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt))',
       // Add more licenses here as needed
     };
+
     // write code to check if the license is in the map and return the badge; use an if statement
     if(licenseBadgeMap[license]) {
       return licenseBadgeMap[license];
     }
-    
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+
+function renderLicenseLink(license) {
+  if(license) {
+    const licenseLinkMap = {
+      MIT: 'https://opensource.org/licenses/MIT',
+
+      Apache: 'https://opensource.org/licenses/Apache-2.0',
+
+      GPL: 'https://www.gnu.org/licenses/gpl-3.0',
+
+      BSD: 'https://opensource.org/licenses/BSD-3-Clause',
+
+      Boost: 'https://www.boost.org/LICENSE_1_0.txt',
+      // Add more licenses here as needed
+    };
+
+    // write code to check if the license is in the map and return the badge; use an if statement
+    // the if statement should check if the license is in the map and return the link
+    if(licenseLinkMap[license]) {
+      return licenseLinkMap[license];
+    }
+  }
+
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
