@@ -1,4 +1,4 @@
-# REAME Generator
+# Auto Readme
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
@@ -28,14 +28,14 @@
   https://opensource.org/licenses/MIT
 
   ## Contributing
-  Make a copy of repo
+  Make a copy
 
   ## Tests
-  See video for a walkthrough For a walthrough test demostrating how the application works, you can watch the video [here](https://drive.google.com/file/d/1J9QJ)
+  For a walthrough test demostrating how the application works, you can watch the video [here](https://drive.google.com/file/d/1J9QJ)
 
 
   ## Questions
   If you have any questions, you can reach me through the following channels:
-  - GitHub: [EddieJae24](https://github.com/EddieJae24)
+  - GitHub: [EddieJae](https://github.com/EddieJae)
   - Email: tetraed.llc@gmail.com
   

@@ -96,7 +96,7 @@ function generateMarkdown(questions) {
   ${questions.contributing}
 
   ## Tests
-  ${questions.tests} For a walthrough test demostrating how the application works, you can watch the video [here](https://drive.google.com/file/d/1J9QJ)
+  For a walthrough test demostrating how the application works, you can watch the video [here](https://drive.google.com/file/d/1J9QJ)
 
 
   ## Questions

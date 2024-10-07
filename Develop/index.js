@@ -43,11 +43,7 @@ const questions = [
         name: 'contributing',
         message: 'Please provide guidelines for how other developers can contribute to your project.'
     },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Provide examples on how to run tests.'
-    },
+    
     {
         type: 'input',
         name: 'github',
