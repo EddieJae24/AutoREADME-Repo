@@ -3,15 +3,15 @@
 function renderLicenseBadge(license) {
   if(license) {
     const licenseBadgeMap = {
-      MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT))',
+      MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
 
-      Apache: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0))',
+      Apache: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
 
       GPL: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0))',
 
-      BSD: '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause))',
+      BSD: '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
 
-      Boost: '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt))',
+      Boost: '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
       // Add more licenses here as needed
     };
 
@@ -55,55 +55,56 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
 
   if(license) {
-    return `## License
-    This project is licensed under the ${license} license.`;
+    return `This project is licensed under the ${license} license.`;
   }
   return '';
 }
 
 // TODO: Create a function to generate markdown for README
 // added the license badge, license link, and license section to the markdown
-function generateMarkdown(data) {
-  return `# ${data.title}
- ${renderLicenseBadge(data.license)}
+function generateMarkdown(questions) {
+  return `# ${questions.projectTitle}
+ ${renderLicenseBadge(questions.license)}
 
   ## Description
-  ${data.description}
+  ${questions.description}
 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
+  - [Credits](#credits)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
 
   ## Installation
-  ${data.installation}
+  ${questions.installation}
 
   ## Usage
-  ${data.usage}
+  ${questions.usage}
 
   ## Credits
-  ${data.credits}
+  ${questions.credits}
 
   ## License
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(questions.license)}
 
-  ${renderLicenseLink(data.license)}
+  ${renderLicenseLink(questions.license)}
 
   ## Contributing
-  ${data.contributing}
+  ${questions.contributing}
 
   ## Tests
-  ${data.tests}
+  ${questions.tests}
 
 
   ## Questions
   If you have any questions, you can reach me through the following channels:
-  - GitHub: [${data.github}](https://github.com/${data.github})
-  - Email: ${data.email}
+  - GitHub: [${questions.github}](https://github.com/${questions.github})
+  - Email: ${questions.email}
   `;
 }
+// expeort the generateMarkdown function to the index.js file
 
 export default generateMarkdown;
