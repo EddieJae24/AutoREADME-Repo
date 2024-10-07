@@ -45,6 +45,7 @@ function renderLicenseLink(license) {
     if(licenseLinkMap[license]) {
       return licenseLinkMap[license];
     }
+    
   }
   // return an empty string if the license is not in the map
   return '';
