@@ -64,7 +64,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 // added the license badge, license link, and license section to the markdown
 function generateMarkdown(questions) {
-  return `# ${questions.title}
+  return `# ${questions.projectTitle}
  ${renderLicenseBadge(questions.license)}
 
   ## Description
@@ -74,6 +74,7 @@ function generateMarkdown(questions) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
+  - [Credits](#credits)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
