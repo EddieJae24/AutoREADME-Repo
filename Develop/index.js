@@ -48,14 +48,24 @@ const questions = [
         name: 'tests',
         message: 'Provide examples on how to run tests.'
     },
-   
+//   Add more questions here if needed
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, questions) {
+    fs.writeFile(fileName, generateMarkdown(questions), (err) =>
+    err ? console.error(err) : console.log(`Success! Your README.md file for your ${projectTitle} has been generated.`)
+    );
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((answers) => {
+        writeToFile('README.md', answers);
+    });
+}
 
 // Function call to initialize app
 init();
