@@ -96,7 +96,8 @@ function generateMarkdown(questions) {
   ${questions.contributing}
 
   ## Tests
-  ${questions.tests}
+  For a walkthrough on running tests for this project, watch the following video:
+  [![Test Walkthrough Video](https://app.screencastify.com/v3/watch/WxBo4hbrEZZKtYWYT5QS)
 
 
   ## Questions
