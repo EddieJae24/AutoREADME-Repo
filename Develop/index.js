@@ -48,13 +48,24 @@ const questions = [
         name: 'tests',
         message: 'Provide examples on how to run tests.'
     },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github username?'
+    },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?'
+    },
 //   Add more questions here if needed
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, questions) {
     fs.writeFile(fileName, generateMarkdown(questions), (err) =>
-    err ? console.error(err) : console.log(`Success! Your README.md file for your ${projectTitle} has been generated.`)
+    err ? console.error(err) : console.log(`Success! Your README.md file for your has been generated.`)
     );
 
 }

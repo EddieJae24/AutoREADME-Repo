@@ -55,8 +55,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
 
   if(license) {
-    return `## License
-    This project is licensed under the ${license} license.`;
+    return `This project is licensed under the ${license} license.`;
   }
   return '';
 }
@@ -107,4 +106,5 @@ function generateMarkdown(questions) {
   `;
 }
 // expeort the generateMarkdown function to the index.js file
+
 export default generateMarkdown;
